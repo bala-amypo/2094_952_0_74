@@ -7,7 +7,7 @@ import com.example.demo.service.StudentService;
 import com.example.demo.repository.StudentRepository;
 
 @Service
-public interface StudentServiceImpl implements StudentService {
+public interface StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
     @Override

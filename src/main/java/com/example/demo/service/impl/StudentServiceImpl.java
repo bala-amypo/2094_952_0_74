@@ -7,7 +7,7 @@ import com.example.demo.service.StudentService;
 public interface StudentServiceImpl implements StudentService {
     @Override
     public Student poststudent(Student st){
-        
+        return 
     }
     
 }

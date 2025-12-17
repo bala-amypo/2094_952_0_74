@@ -14,4 +14,4 @@ public interface StudentServiceImpl implements StudentService{
     public Student poststudent(Student st){
         return stdrepo.save(st);
     }
-}
+}++

@@ -3,13 +3,13 @@ package com.example.demo.entity;
 import java.time.LocalDate;
 
 public class Student{
-    private long id;
+    private Long id;
     private String name;
     private String dept;
     private LocalDate dob;
     private float cgpa;
 
-    public long getId(){
+    public Long getId(){
         return id;
     }
     public void setId(long id){
@@ -26,7 +26,7 @@ public class Student{
     public String getDept(){
         return dept;
     }
-    public void setDept(){
+    public void setDept(String dept){
         this.dept=dept;
     }
 
@@ -39,5 +39,8 @@ public class Student{
 
     public float getCgpa(){
         return cgpa;
+    }
+    public void setCgpa(float cgpa){
+        this.cgpa=cgpa;
     }
 }

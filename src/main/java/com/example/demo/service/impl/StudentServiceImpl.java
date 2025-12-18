@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
-import com.example.demo.
 import com.example.demo.service.StudentService;
 import java.util.*;
 
@@ -35,9 +34,5 @@ public class StudentServiceImpl implements StudentService{
         else{
             return "Student with ID" +id+ "not found";
         }
-    }
-    @PutMapping("/update/{id}")
-    public String update(@PathVariable Long id,@RequestBody Student st){
-        return stdser.updateData(id,st);
     }
 }

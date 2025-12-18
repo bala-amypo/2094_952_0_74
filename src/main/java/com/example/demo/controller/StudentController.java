@@ -4,6 +4,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.Student;
+import java.util.List;
+import java.util.Optional;
+
 
 @RestController
 public class StudentController {
@@ -18,7 +21,7 @@ public class StudentController {
         return stdser.getAllStudents();
     }
     @GetMapping("/getbyId/{id}")
-    public Optional<Student>getById(@Pathvariable Long id){
+    public Optional<Student>getById(@PathVariable Long id){
         return stdser.getById(Id);
     }
 }

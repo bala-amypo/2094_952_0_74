@@ -24,5 +24,15 @@ public class StudentServiceImpl implements StudentService{
         return stdrepo.findById(id);
     }
     @GetMapping("/addStudent")
-    public Student addStudent()
+    public Student addStudent(@RequestBody Student student){
+        return studentService.postStudent(student);
+    }
+    @GetMapping("/getall")
+    public List<Student>get(){
+        return studentService.getAllStudent();
+    }
+    @GetMapping("/getbyId/{id}")
+    public Optional<Student>getById(@Pathvariable Long id){
+        return studentService.getById(Id);
+    }
 }

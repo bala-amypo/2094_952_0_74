@@ -34,9 +34,9 @@ public class StudentServiceImpl implements StudentService{
         else{
             return "Student with ID" +id+ "not found";
         }
-        @PutMapping("/update/{id}")
-        public String update(@PathVariable Long id,@RequestBody Student st){
-            return stdser.updateData(id,st);
-        }
+    }
+    @PutMapping("/update/{id}")
+    public String update(@PathVariable Long id,@RequestBody Student st){
+        return stdser.updateData(id,st);
     }
 }

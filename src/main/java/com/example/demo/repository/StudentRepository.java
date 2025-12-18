@@ -6,7 +6,4 @@ import com.example.demo.entity.Student;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student,Long> {
-
- findall()=get information from particular table
- getbyID()-to get particular id
 }

@@ -29,7 +29,14 @@ public class StudentServiceImpl implements StudentService{
         if(status){
             st.setId(id);
             stdrepo.save(st);
-            
+            return "Student updated successfully";
+        }
+        else{
+            return "Student with ID" +id+ "not found";
+        }
+        @PutMapping("/update/{id}")
+        public String update(@PathVariable Long id,@RequestBody Student st){
+            return stdser.updateData(id,st);
         }
     }
 }
